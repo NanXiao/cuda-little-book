@@ -2,3 +2,4 @@
 * [Declare CUDA device](posts/declare-cuda-device.md)
 * [Synchronization](posts/synchronization.md)
 * [Pinned Host Memory](posts/pinned-host-memory.md)
+* [Check CUDA runtime API result](posts/check-cuda-runtime-api-result.md)
