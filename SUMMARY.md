@@ -4,3 +4,4 @@
 * [Pinned Host Memory](posts/pinned-host-memory.md)
 * [Check CUDA runtime API result](posts/check-cuda-runtime-api-result.md)
 * ["invalid device pointer" error when calling cudaFree](posts/invalid-device-pointer-error-when-calling-cudafree.md)
+* [CUDA timer](posts/cuda-timer.md)
