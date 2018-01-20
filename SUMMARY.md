@@ -2,6 +2,7 @@
 * [Declare CUDA device](posts/declare-cuda-device.md)
 * [Synchronization](posts/synchronization.md)
 * [Pinned Host Memory](posts/pinned-host-memory.md)
+* [CUDA stream](posts/cuda-stream.md)
+* [CUDA timer](posts/cuda-timer.md)
 * [Check CUDA runtime API result](posts/check-cuda-runtime-api-result.md)
 * ["invalid device pointer" error when calling cudaFree](posts/invalid-device-pointer-error-when-calling-cudafree.md)
-* [CUDA timer](posts/cuda-timer.md)
