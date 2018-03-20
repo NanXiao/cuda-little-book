@@ -17,5 +17,6 @@ The following snippet is extracted from [GPU Pro Tip: CUDA 7 Streams Simplify Co
 > To enable per-thread default streams in CUDA 7 and later, you can either compile with the nvcc command-line option --default-stream per-thread, or #define the CUDA_API_PER_THREAD_DEFAULT_STREAM preprocessor macro before including CUDA headers (cuda.h or cuda_runtime.h). It is important to note: you cannot use #define CUDA_API_PER_THREAD_DEFAULT_STREAM to enable this behavior in a .cu file when the code is compiled by nvcc because nvcc implicitly includes cuda_runtime.h at the top of the translation unit.
 
 References:  
+[GPU Pro Tip: CUDA 7 Streams Simplify Concurrency](https://devblogs.nvidia.com/gpu-pro-tip-cuda-7-streams-simplify-concurrency/)  
 [How to Overlap Data Transfers in CUDA C/C++](https://devblogs.nvidia.com/how-overlap-data-transfers-cuda-cc/);  
 [CUDA C/C++ Streams and Concurrency](https://developer.download.nvidia.com/CUDA/training/StreamsAndConcurrencyWebinar.pdf).
