@@ -5,5 +5,5 @@
 * [CUDA stream](posts/cuda-stream.md)
 * [CUDA timer](posts/cuda-timer.md)
 * [Check CUDA runtime API result](posts/check-cuda-runtime-api-result.md)
-* ["invalid device pointer" error when calling cudaFree](posts/invalid-device-pointer-error-when-calling-cudafree.md)  
+* ["invalid device pointer" error when calling cudaFree](posts/invalid-device-pointer-error-when-calling-cudafree.md)
 * [Unified Virtual Addressing](posts/unified-virtual-addressing.md)
