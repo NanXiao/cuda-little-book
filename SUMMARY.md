@@ -1,6 +1,7 @@
 * [CUDA Programming model](posts/cuda-programming-model.md)
 * [Kernel execution configuration](posts/kernel-execution-configuration.md)
 * [Declare CUDA device](posts/declare-cuda-device.md)
+* [Grid-Stride Loops](posts/grid-stride-loops.md)
 * [Synchronization](posts/synchronization.md)
 * [Pinned Host Memory](posts/pinned-host-memory.md)
 * [CUDA stream](posts/cuda-stream.md)
