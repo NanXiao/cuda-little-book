@@ -11,7 +11,7 @@ In summary, grid-stride loops don't assume that the thread grid is large enough 
 	    y[i] = x[i] + y[i];
 	}
 
-或  
+Or  
 
 	__global__
 	void saxpy(int n, float a, float *x, float *y)
