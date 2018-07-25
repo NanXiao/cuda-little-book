@@ -1,6 +1,7 @@
 * [CUDA Programming model](posts/cuda-programming-model.md)
 * [Kernel execution configuration](posts/kernel-execution-configuration.md)
 * [Memory hierarchy](posts/memory-hierarchy.md)
+* ["compute-bound" & "memory-bound" kernels](posts/compute-bound-and-memory-bound-kernels.md)
 * [Declare CUDA device](posts/declare-cuda-device.md)
 * [Grid-Stride Loops](posts/grid-stride-loops.md)
 * [Synchronization](posts/synchronization.md)
