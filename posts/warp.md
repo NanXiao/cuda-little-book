@@ -5,6 +5,6 @@
 Threads within a warp must follow the same execution trajectory. All threads must execute the same instruction at the same time. In other words, threads cannot diverge. So if thread contains statement like `if-then-else`, the CUDA platform will instruct the warp to execute the then part first, and then proceed to the else part. While executing the then part, all threads that evaluated to false (e.g. the else threads) are effectively deactivated. When execution proceeds to the else condition, the situation is reversed. As you can see, the then and else parts are not executed in parallel, but in serial. This serialization can result in a significant performance loss.  
 
 References:  
-[SIMT and Warp](https://cvw.cac.cornell.edu/gpu/simt_warp) ;  
+[SIMT and Warp](https://cvw.cac.cornell.edu/gpu/simt_warp);  
 [Thread Divergence](https://cvw.cac.cornell.edu/gpu/thread_div);  
 [How do CUDA cores on a SM execute warps concurrently?](https://devtalk.nvidia.com/default/topic/486556/cuda-programming-and-performance/how-do-cuda-cores-on-a-sm-execute-warps-concurrently-/post/3491408/).
