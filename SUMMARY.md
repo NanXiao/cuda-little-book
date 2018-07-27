@@ -2,6 +2,7 @@
 * [Kernel execution configuration](posts/kernel-execution-configuration.md)
 * [Memory hierarchy](posts/memory-hierarchy.md)
 * [Execution model](posts/execution-model.md)
+* [Warp](posts/warp.md)
 * ["compute-bound" & "memory-bound" kernels](posts/compute-bound-and-memory-bound-kernels.md)
 * [Declare CUDA device](posts/declare-cuda-device.md)
 * [Grid-Stride Loops](posts/grid-stride-loops.md)
