@@ -1,5 +1,6 @@
 * [CUDA Programming model](posts/cuda-programming-model.md)
 * [Kernel execution configuration](posts/kernel-execution-configuration.md)
+* [nvcc](posts/nvcc.md)
 * [Memory hierarchy](posts/memory-hierarchy.md)
 * [Execution model](posts/execution-model.md)
 * [Warp](posts/warp.md)
