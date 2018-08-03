@@ -1,6 +1,7 @@
 * [CUDA Programming model](posts/cuda-programming-model.md)
 * [Kernel execution configuration](posts/kernel-execution-configuration.md)
 * [nvcc](posts/nvcc.md)
+* [Use CMake to compile CUDA program](posts/use-cmake-to-compile-cuda-program.md)
 * [Memory hierarchy](posts/memory-hierarchy.md)
 * [Execution model](posts/execution-model.md)
 * [Warp](posts/warp.md)
