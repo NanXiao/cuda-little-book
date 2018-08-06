@@ -55,4 +55,23 @@ on the host in chronological order:
 	231.28ms  4.0010us  cuDeviceGetCount
 	231.29ms  3.0830us  cuDeviceGetCount
 	......
-Usually, we only care about runtime API calls: `--profile-api-trace runtime`.
+Usually, we only care about runtime API calls: `--profile-api-trace runtime`.  
+
+During profiling, you need to discriminate event and metric:  
+
+> In CUDA profling, an event is a countable activity that corresponds to a hardware
+counter collected during kernel execution. A metric is a characteristic of a kernel
+calculated from one or more events. Keep in mind the following concepts about
+events and metrics:  
+
+>➤ Most counters are reported per streaming multiprocessor but not the entire
+GPU.  
+➤ A single run can only collect a few counters. The collection of some counters is
+mutually exclusive. Multiple profling runs are often needed to gather all
+relevant counters.  
+➤ Counter values may not be exactly the same across repeated runs due to
+variations in GPU execution (such as thread block and warp scheduling order).
+
+One example of checking performance metrics:  
+
+	$ nvprof --devices 0 -m gld_efficiency,gst_efficiency,shared_efficiency,branch_efficiency,warp_execution_efficiency,warp_nonpred_execution_efficiency,global_hit_rate,local_hit_rate,tex_cache_hit_rate,l2_tex_read_hit_rate,l2_tex_write_hit_rate --log-file ~/nvprof.%p.%h.txt ./test_program
