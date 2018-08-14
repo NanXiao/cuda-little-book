@@ -1,4 +1,5 @@
 * [CUDA Programming model](posts/cuda-programming-model.md)
+* [Compute Capability](posts/compute-capability.md)
 * [Kernel execution configuration](posts/kernel-execution-configuration.md)
 * [nvcc](posts/nvcc.md)
 * [Use CMake to compile CUDA program](posts/use-cmake-to-compile-cuda-program.md)
