@@ -18,6 +18,8 @@ The following snippet is extracted from [GPU Pro Tip: CUDA 7 Streams Simplify Co
 
 In summary, before CUDA 7, all host threads share one default stream, so this will impact performance drastically. Since CUDA 7, every thread can have one unique default stream, so threads can issue commands concurrently in different default streams.
 
+BTW, `cudaStreamCreate` will launch a new thread and different devices may consume different memory in creating streams (Please refer [Some tips of creating streams in using CUDA](https://nanxiao.me/en/some-tips-of-creating-streams-in-using-cuda/)).  
+
 References:  
 [GPU Pro Tip: CUDA 7 Streams Simplify Concurrency](https://devblogs.nvidia.com/gpu-pro-tip-cuda-7-streams-simplify-concurrency/)  
 [How to Overlap Data Transfers in CUDA C/C++](https://devblogs.nvidia.com/how-overlap-data-transfers-cuda-cc/);  
