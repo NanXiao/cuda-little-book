@@ -6,3 +6,13 @@ Refer [Building Cross-Platform CUDA Applications with CMake](https://devblogs.nv
 	project(lscuda LANGUAGES CXX CUDA)
 	
 	add_executable(lscuda lscuda.cu)
+
+If compiler is not in `$PATH`, there are two methods to set it:  
+
+(1) Add following line in `CMakeLists.txt`:  
+
+	SET(CMAKE_CUDA_COMPILER /usr/local/cuda-9.0/bin/nvcc)
+
+(2) Set `CUDACXX` environmental variable:  
+
+	$ CUDACXX=/usr/local/cuda-9.0/bin/nvcc cmake ..
