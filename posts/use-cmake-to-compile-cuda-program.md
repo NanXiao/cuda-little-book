@@ -16,3 +16,13 @@ If compiler is not in `$PATH`, there are two methods to set it:
 (2) Set `CUDACXX` environmental variable:  
 
 	$ CUDACXX=/usr/local/cuda-9.0/bin/nvcc cmake ..
+
+
+Use [OpenMP](https://www.openmp.org/):  
+
+	FIND_PACKAGE(OpenMP REQUIRED)
+	IF (OPENMP_FOUND) 
+		SET(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -Xcompiler=${OpenMP_CXX_FLAGS}") 
+		SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_CXX_FLAGS}") 
+	ENDIF()  
+
