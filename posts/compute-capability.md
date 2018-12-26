@@ -10,5 +10,19 @@ number Y and is denoted by X.Y.
 > The minor revision number corresponds to an incremental improvement to the core
 architecture, possibly including new features.  
 
-`Volta`, `Maxwell`, etc are [microarchitectures](https://en.wikipedia.org/wiki/Category:Nvidia_microarchitectures) names.
+`Volta`, `Maxwell`, etc are [microarchitectures](https://en.wikipedia.org/wiki/Category:Nvidia_microarchitectures) names.  
+
+Beware that architecture name conflicts with device name (E.g., `Tesla p100` is a device, and `Tesla` is also a architecture name) sometimes. You can use `deviceQuery` example shipped in `/opt/cuda/samples/1_Utilities` to determine the compute capability of every device:  
+
+	$ ./deviceQuery
+	./deviceQuery Starting...
+	
+	 CUDA Device Query (Runtime API) version (CUDART static linking)
+	
+	Detected 4 CUDA Capable device(s)
+	
+	Device 0: "Tesla V100-PCIE-16GB"
+	  CUDA Driver Version / Runtime Version          10.0 / 9.2
+	  CUDA Capability Major/Minor version number:    7.0
+	...... 
 
