@@ -1,5 +1,6 @@
 # Unified Memory
-Refer [Unified Memory for CUDA Beginners](https://devblogs.nvidia.com/unified-memory-cuda-beginners/):  
+Refer [Unified Memory for CUDA Beginners](https://devblogs.nvidia.com/unified-memory-cuda-beginners/)(
+For the code of this post, you can refer this [repository](https://github.com/NanXiao/cuda_unified_memory_example)):  
 ![image](https://raw.githubusercontent.com/NanXiao/cuda-little-book/master/images/unified-memory-multigpu.png)
 > Unified Memory is a single memory address space accessible from any processor in a system. This hardware/software technology allows applications to allocate data that can be read or written from code running on either CPUs or GPUs. Allocating Unified Memory is as simple as replacing calls to malloc() or new with calls to cudaMallocManaged(), an allocation function that returns a pointer accessible from any processor (ptr in the following).
 
